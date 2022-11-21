@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const About = () => {
   return (
     <div className="grid md:grid-cols-3 text-center md:text-left py-12 ">
       <div className="flex flex-col gap-8">
@@ -35,4 +35,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default About;
