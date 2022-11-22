@@ -2,6 +2,7 @@ import React from "react";
 import { IoLogoFacebook } from "react-icons/io";
 import About from "../components/About";
 import { Card, Card2 } from "../components/Cards";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -22,12 +23,12 @@ export default function Home() {
         </div>
       </header>
       <section className=" bg-[#F8F8F8]">
-        <div className="container mx-auto md:pt-80  ">
+        <div className="container mx-auto md:pt-80 px-3 md:px-0 ">
           <div className="md:hidden block ">
             <About />
           </div>
-          <h className="text-[#383838] text-5xl px-3  ">About Us.</h>
-          <div className="md:border-t-8 border-t-4 mt-10 px-3 ">
+          <h className="text-[#383838] text-5xl   ">About Us.</h>
+          <div className="md:border-t-8 border-t-4 mt-10  ">
             <div className=" grid md:grid-cols-12 grid-cols-2 gap-y-4 mt-20 ">
               <div className="md:col-span-2">
                 <h className="text-[#770A12] text-4xl md:text-7xl">52</h>
@@ -48,7 +49,7 @@ export default function Home() {
               </div>
             </div>
             <div className="grid md:grid-cols-12 md:mt-28 mt-16">
-              <div className="md:col-span-3 px-3">
+              <div className="md:col-span-3 ">
                 <div className="  border-b-2 border-gray-600 py-3">
                   <h className="text-[#383838] text-xl font-semibold">
                     Most experienced in the industry in Maldives
@@ -76,7 +77,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="md:col-span-1"></div>
-              <div className="md:col-span-8 md:pr-36  mt-16 md:mt-0 px-3">
+              <div className="md:col-span-8 md:pr-36  mt-16 md:mt-0 ">
                 <p className="text-[#575757]">
                   Incorporated in the Republic of Maldives in 2007, Hotels and
                   Resort Construction Private Limited or HRC is an off-shoot of
@@ -96,7 +97,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mx-auto">
+          <div className="flex justify-center md:block">
             <button className="px-11 py-4 rounded-3xl text-[#383838] bg-[#EBEBEB] md:flex md:ml-auto mt-14 ">
               {" "}
               learn more
@@ -127,7 +128,7 @@ export default function Home() {
               <Card {...item} key={i} />
             ))}
           </div>
-          <div className="mx-auto mb-36 ">
+          <div className="flex justify-center md:block pb-36 ">
             <button className="px-11 py-4 rounded-3xl text-[#383838] bg-[#EBEBEB] md:flex md:ml-auto mt-14 ">
               {" "}
               View more
@@ -136,8 +137,8 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-[#F8F8F8]">
-        <div className="container mx-auto bg-[#EBEBEB]">
-          <div className=" px-16 py-12">
+        <div className="container mx-auto px-3 md:px-0 bg-[#EBEBEB]">
+          <div className=" md:px-16 py-12">
             <h className="text-[#C4C4C4] text-5xl">Testimonials.</h>
             <div className="flex justify-center mt-36">
               <div className=" bg-white w-20 h-20 rounded-full"></div>
@@ -147,7 +148,7 @@ export default function Home() {
                 Leo Ting Ping Ronald<br></br> CEO of Keong Hong Holdings
               </p>
             </div>
-            <div className="flex- justify-center text-center mt-7">
+            <div className="flex- justify-center text-center mt-7 px-3">
               <p className="text-[#383838]">
                 This hotel (Mercure Kooddoo) is truly unique and as you know it
                 was the <br></br> brainchild of my good friend of more than 14
@@ -158,9 +159,9 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-40 bg-[#F8F8F8]">
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto px-3 md:px-0">
           <h className="text-5xl text-[#770A12]">In the gallery</h>
-          <div className="grid md:grid-cols-10 md:gap-2 mt-24 ">
+          <div className="grid md:grid-cols-10 md:gap-2 md:mt-24 mt-14">
             <div className="md:col-span-8  relative">
               <img
                 className="w-full md:h-[512px]"
@@ -217,7 +218,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mx-auto  ">
+          <div className="flex justify-center ">
             <button className="px-11 py-4 rounded-3xl text-[#383838] bg-[#EBEBEB] md:flex md:ml-auto mt-14 ">
               {" "}
               View more
@@ -226,17 +227,15 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-40 bg-[#F8F8F8]">
-        <div className="container mx-auto">
-          <h className="text-[#770A12] text-5xl flex justify-center md:flex-none md:justify-start">
-            In the News
-          </h>
+        <div className="container mx-auto px-3">
+          <h className="text-[#770A12] text-5xl  md:px-0 ">In the News</h>
 
-          <div className="grid md:grid-cols-4 gap-y-8 container md:mt-12  md:gap-y-14 ">
+          <div className="grid md:grid-cols-4 gap-y-8 container md:mt-12 mt-12 md:gap-y-14 ">
             {CARD2.map((item, i) => (
               <Card2 {...item} key={i} />
             ))}
           </div>
-          <div className="mx-auto  ">
+          <div className=" flex justify-center ">
             <button className="px-11 py-4 rounded-3xl text-[#383838] bg-[#EBEBEB] md:flex md:ml-auto mt-14 ">
               {" "}
               View more
@@ -244,6 +243,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className=" pt-20 pb-40 bg-[#F8F8F8]">
+        <div className="container mx-auto px-4 md:px-0">
+          <h className="text-5xl text-[#383838]">Our clients.</h>
+          <div className="border-t-2 border-[#CBCBCB] grid md:grid-cols-6 container place-items-center grid-cols-2  mt-8 ">
+            <img className="mt-20  " src="img/ring.png" alt="" />
+            <img className="mt-20  " src="img/ring.png" alt="" />
+            <img className="mt-20 " src="img/ring.png" alt="" />
+            <img className=" mt-20 " src="img/ring.png" alt="" />
+            <img className="mt-20  " src="img/ring.png" alt="" />
+            <img className="mt-20  " src="img/ring.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div className="container mx-auto">
+          <Footer />
+        </div>
+      </footer>
     </div>
   );
 }

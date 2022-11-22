@@ -14,7 +14,7 @@ export const Card = ({ image, title, description }) => {
 
 export const Card2 = ({ image, title, description }) => {
   return (
-    <div className="w-3/4 contaoner mx-auto md:mx-0 my-2">
+    <div className="container mx-auto md:mx-0 my-2">
       <div className="">{image}</div>
       <div className="container mt-4 ">
         <p className="text-sm text-[#727272] font-semibold">{title}</p>
