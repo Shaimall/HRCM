@@ -40,7 +40,7 @@ const Navbar = (props) => {
           </button>
           <div className="p-6 w-1/2 h-screen z-20 fixed top-0 -right-96  peer-focus:right-0 peer:transition ease-out delay-150 duration-200">
             <div className="flex flex-col justify-start item-center">
-              <div className=" my-4 border-b border-gray-100 pb-4">
+              <div className=" my-4 border-b border-gray-100 pb-3">
                 <div className="flex mb-2 justify-start items-center gap-4 pl-5  rounded-xl p-2  m-auto">
                   <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
                     About Us
