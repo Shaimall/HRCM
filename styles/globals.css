@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../public/fonts/Urbanist-Bold.ttf");
+  font-family: "Urbanist";
+  src: url("../public/fonts/Urbanist-SemiBold.ttf");
+  font-family: "Urbanist";
+  src: url("../public/fonts/Urbanist-Black.ttf");
+  font-family: "Urbanist";
+  src: url("../public/fonts/Urbanist-Medium.ttf");
+}
+

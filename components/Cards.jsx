@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Card = ({ image, title, description }) => {
   return (
     <div className=" ">
@@ -12,14 +14,14 @@ export const Card = ({ image, title, description }) => {
   );
 };
 
-export const Card2 = ({ image, title, description }) => {
+export const Card2 = ({ image, title, description, href }) => {
   return (
-    <div className="container mx-auto md:mx-0 my-2">
+    <Link href={href} className=" container mx-auto md:mx-0 my-2">
       <div className="">{image}</div>
       <div className="container mt-4 ">
         <p className="text-sm text-[#727272] font-semibold">{title}</p>
         <p className=" text-[#770A12] mt-3 ">{description}</p>
       </div>
-    </div>
+    </Link>
   );
 };

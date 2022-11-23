@@ -3,13 +3,22 @@ import { IoLogoFacebook } from "react-icons/io";
 import About from "../components/About";
 import { Card, Card2 } from "../components/Cards";
 import Footer from "../components/Footer";
+import { BsFacebook } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <header className="min-h-[586px] bg-slate-500 relative">
-        <div className=" container md:px-0 mx-auto md:py-72 py-36  ">
-          <h className="text-white md:text-7xl text-5xl font-bold leading-relaxed md:text-left hidden md:block ">
+      <header className="md:min-h-[586px] min-h-[813px] bg-slate-500 relative">
+        <Navbar />
+        <div className="relative container md:px-0 mx-auto md:py-72 pt-40  ">
+          <div className="flex justify-center md:hidden">
+            <img className=" " src="img/ring.png" alt="" />
+          </div>
+          <h className="text-white md:text-7xl text-5xl font-Urb leading-relaxed md:text-left hidden md:block ">
             Leading Hotel Resort<br></br> Contractor in the<br></br> Maldives
           </h>
           <h className="flex justify-center text-center text-3xl text-white font-bold leading-relaxed md:hidden ">
@@ -17,17 +26,17 @@ export default function Home() {
             Leading Hotel<br></br> Resort<br></br> Contractor in the<br></br>{" "}
             Maldives
           </h>
-          <div className="md:block hidden ">
-            <About />
-          </div>
         </div>
       </header>
       <section className=" bg-[#F8F8F8]">
-        <div className="container mx-auto md:pt-80 px-3 md:px-0 ">
+        <div className="container mx-auto md:pt-80 px-3 md:px-0 relative">
+          <div className="md:block hidden absolute -top-40 inset-x-2 ">
+            <About />
+          </div>
           <div className="md:hidden block ">
             <About />
           </div>
-          <h className="text-[#383838] text-5xl   ">About Us.</h>
+          <h className="text-[#383838] text-5xl font-Ur  ">About Us.</h>
           <div className="md:border-t-8 border-t-4 mt-10  ">
             <div className=" grid md:grid-cols-12 grid-cols-2 gap-y-4 mt-20 ">
               <div className="md:col-span-2">
@@ -42,7 +51,7 @@ export default function Home() {
                 <h className="text-[#770A12] text-4xl md:text-7xl">100</h>
                 <p className="text-[#383838] mt-3">Customer Satisfaction</p>
               </div>
-              <div className="col-span-4 hidden md:block"></div>
+              <div className="col-span-3 hidden md:block"></div>
               <div className="md:col-span-2">
                 <h className="text-[#770A12] text-4xl md:text-7xl">20743</h>
                 <p className="text-[#383838] mt-3">Coffee Cups</p>
@@ -112,16 +121,18 @@ export default function Home() {
           </h>
           <div className=" grid grid-cols-5 lg:gap-52 md:gap-36 md:mt-36">
             <a className="text-xl text-[#383838] hover:text-[#770A12] ">All</a>
-            <a className="text-xl text-[#383838] hover:text-[#770A12] ">
+            <a className="text-xl text-[#383838] hover:text-[#770A12] md:flex hidden ">
               Resorts
             </a>
-            <a className="text-xl text-[#383838] hover:text-[#770A12] ">
+            <a className="text-xl text-[#383838] hover:text-[#770A12] md:flex hidden">
               Hotels
             </a>
-            <a className="text-xl text-[#383838] hover:text-[#770A12] ">
+            <a className="text-xl text-[#383838] hover:text-[#770A12] md:flex hidden ">
               Residentials
             </a>
-            <a className="text-xl text-[#383838] hover:text-[#770A12] ">Csr</a>
+            <a className="text-xl text-[#383838] hover:text-[#770A12] md:flex hidden ">
+              Csr
+            </a>
           </div>
           <div className="grid md:grid-cols-3 gap-3 container md:mt-12 mx-auto md:gap-y-14">
             {CARD.map((item, i) => (
@@ -230,7 +241,7 @@ export default function Home() {
         <div className="container mx-auto px-3">
           <h className="text-[#770A12] text-5xl  md:px-0 ">In the News</h>
 
-          <div className="grid md:grid-cols-4 gap-y-8 container md:mt-12 mt-12 md:gap-y-14 ">
+          <div className="grid md:grid-cols-4 gap-y-8 container md:mt-12 mt-12 md:gap-y-14 gap-x-2 ">
             {CARD2.map((item, i) => (
               <Card2 {...item} key={i} />
             ))}
@@ -330,7 +341,7 @@ const CARD2 = [
     description:
       "chairman mr. mohamed ali janah appointed to newly created “maldives building & construction board”",
 
-    href: "#",
+    href: "https://adhadhu.com/",
   },
   {
     image: <img className="w-full" src="img/cards1.png" alt="" />,
@@ -338,7 +349,7 @@ const CARD2 = [
     title: "18 September 2021",
     description: "mvr 444 million to diversify tourism growth",
 
-    href: "#",
+    href: "https://adhadhu.com/",
   },
   {
     image: <img className="w-full" src="img/cards1.png" alt="" />,
@@ -346,7 +357,7 @@ const CARD2 = [
     title: "18 September 2021",
     description: "ifawpca 2020 maldives convention countdown launched",
 
-    href: "#",
+    href: "https://adhadhu.com/",
   },
   {
     image: <img className="w-full" src="img/cards1.png" alt="" />,
@@ -354,6 +365,6 @@ const CARD2 = [
     title: "18 September 2021",
     description: "ifawpca 2020 maldives convention countdown launched",
 
-    href: "#",
+    href: "https://adhadhu.com/",
   },
 ];
