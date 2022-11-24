@@ -14,3 +14,6 @@
   src: url("../public/fonts/Urbanist-Medium.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
